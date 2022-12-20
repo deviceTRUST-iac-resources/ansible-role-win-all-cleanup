@@ -1,11 +1,11 @@
 ---
-  - name: Delete installation directories
-    ansible.windows.win_file:
-      path: '{{ item }}'
-      state: absent
-    loop:
-      - 'c:\Install'
-      - 'c:\Script'
-      - 'c:\Log'
-      - 'c:\Logs'
-      - 'c:\GPO'
+- name: Delete installation directories
+  ansible.windows.win_file:
+    path: '{{ item }}'
+    state: absent
+  loop:
+    - 'c:\Install'
+    - 'c:\Script'
+    - 'c:\Log'
+    - 'c:\Logs'
+    - 'c:\GPO'
