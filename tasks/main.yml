@@ -9,3 +9,6 @@
     - 'c:\Log'
     - 'c:\Logs'
     - 'c:\GPO'
+
+- name: Reboot
+  win_reboot:
